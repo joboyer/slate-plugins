@@ -12,6 +12,7 @@ import {
   ELEMENT_TODO_LI,
   ELEMENT_UL,
   insertCodeBlock,
+  insertCodeBloc,
   MARK_BOLD,
   MARK_CODE,
   MARK_ITALIC,
@@ -81,8 +82,13 @@ export const optionsAutoformat: WithAutoformatOptions = {
     },
     {
       type: options[ELEMENT_BLOCKQUOTE].type,
-      markup: ['>'],
+      markup: '``',
+      trigger: '`',
+      triggerAtBlockStart: false,
       preFormat,
+      format: (editor) => {
+        insertCodeBloc(editor as SPEditor, { select: true });
+      },
     },
     {
       type: options[MARK_BOLD].type,

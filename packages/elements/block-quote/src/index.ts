@@ -3,5 +3,12 @@
  */
 
 export * from './defaults';
-export * from './getBlockquoteDeserialize';
-export * from './createBlockquotePlugin';
+export * from './getCodeBlockDeserialize';
+export * from './getCodeBlockDecorate';
+export * from './getCodeBlockRenderLeaf';
+export * from './types';
+export * from './createCodeBlockPlugin';
+export * from './getCodeBlockOnKeyDown';
+export * from './withCodeBlock';
+export * from './queries/index';
+export * from './transforms/index';

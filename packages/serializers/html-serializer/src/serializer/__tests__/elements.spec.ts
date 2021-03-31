@@ -1,6 +1,6 @@
 import {
   createAlignPlugin,
-  createBlockquotePlugin,
+  createCodeBlockPlugi,
   createHeadingPlugin,
   createImagePlugin,
   createLinkPlugin,
@@ -61,7 +61,7 @@ it('serialize blockquote to html', () => {
   expect(
     htmlStringToDOMNode(
       serializeHTMLFromNodes(editor, {
-        plugins: [createBlockquotePlugin()],
+        plugins: [createCodeBlockPlugi()],
         nodes: [
           {
             type: 'blockquote',

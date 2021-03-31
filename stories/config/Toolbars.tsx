@@ -62,6 +62,7 @@ import {
   MARK_UNDERLINE,
   ToolbarAlign,
   ToolbarCodeBlock,
+  ToolbarCodeBloc,
   ToolbarElement,
   ToolbarList,
   ToolbarMark,
@@ -77,7 +78,7 @@ export const ToolbarButtonsBasicElements = () => (
     <ToolbarElement type={useSlatePluginType(ELEMENT_H4)} icon={<Looks4 />} />
     <ToolbarElement type={useSlatePluginType(ELEMENT_H5)} icon={<Looks5 />} />
     <ToolbarElement type={useSlatePluginType(ELEMENT_H6)} icon={<Looks6 />} />
-    <ToolbarElement
+    <ToolbarCodeBloc
       type={useSlatePluginType(ELEMENT_BLOCKQUOTE)}
       icon={<FormatQuote />}
     />

@@ -29,7 +29,7 @@ import { createExitBreakPlugin } from '../../../break/src/exit-break/createExitB
 import { createSoftBreakPlugin } from '../../../break/src/soft-break/createSoftBreakPlugin';
 import { createAlignPlugin } from '../../../elements/alignment/src/createAlignPlugin';
 import { createBasicElementPlugins } from '../../../elements/basic-elements/src/createBasicElementPlugins';
-import { createBlockquotePlugin } from '../../../elements/block-quote/src/createBlockquotePlugin';
+import { createCodeBlockPlugi } from '../../../elements/block-quote/src/createBlockquotePlugin';
 import { createHeadingPlugin } from '../../../elements/heading/src/createHeadingPlugin';
 import { ELEMENT_H1 } from '../../../elements/heading/src/defaults';
 import { createImagePlugin } from '../../../elements/image/src/createImagePlugin';
@@ -70,7 +70,7 @@ const SlatePluginsContainer = () => {
   const plugins = [
     createReactPlugin(),
     createHistoryPlugin(),
-    createBlockquotePlugin(),
+    createCodeBlockPlugi(),
     createTodoListPlugin(),
     createHeadingPlugin({ levels: 5 }),
     ...createBasicElementPlugins(),

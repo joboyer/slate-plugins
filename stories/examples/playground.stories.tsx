@@ -4,7 +4,7 @@ import { Image, Link, Search } from '@styled-icons/material';
 import {
   createAlignPlugin,
   createAutoformatPlugin,
-  createBlockquotePlugin,
+  createCodeBlockPlugi,
   createBoldPlugin,
   createCodeBlockPlugin,
   createCodePlugin,
@@ -97,7 +97,7 @@ export const Plugins = ({
       createReactPlugin(),
       createHistoryPlugin(),
       createParagraphPlugin(),
-      createBlockquotePlugin(),
+      createCodeBlockPlugi(),
       createTodoListPlugin(),
       createHeadingPlugin(),
       createImagePlugin(),

@@ -23,6 +23,7 @@ import {
 import {
   DEFAULTS_BLOCKQUOTE,
   ELEMENT_BLOCKQUOTE,
+  ELEMENT_BLOCKQUOTE_LINE,
 } from '@udecode/slate-plugins-block-quote';
 import {
   DEFAULTS_CODE_BLOCK,
@@ -77,6 +78,7 @@ export type SlatePluginKey =
   | typeof ELEMENT_ALIGN_LEFT
   | typeof ELEMENT_ALIGN_RIGHT
   | typeof ELEMENT_BLOCKQUOTE
+  | typeof ELEMENT_BLOCKQUOTE_LINE
   | typeof ELEMENT_CODE_BLOCK
   | typeof ELEMENT_CODE_LINE
   | typeof ELEMENT_H1
@@ -122,6 +124,7 @@ export const createSlatePluginsOptions = <T extends string = string>(
     [ELEMENT_ALIGN_LEFT]: {},
     [ELEMENT_ALIGN_RIGHT]: {},
     [ELEMENT_BLOCKQUOTE]: DEFAULTS_BLOCKQUOTE,
+    [ELEMENT_BLOCKQUOTE_LINE]: {},
     [ELEMENT_CODE_BLOCK]: DEFAULTS_CODE_BLOCK,
     [ELEMENT_CODE_LINE]: {},
     [ELEMENT_H1]: DEFAULTS_H1,

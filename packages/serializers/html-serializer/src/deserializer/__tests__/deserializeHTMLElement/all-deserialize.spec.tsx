@@ -7,7 +7,7 @@ import { getHtmlDocument, jsx } from '@udecode/slate-plugins-test-utils';
 import { createSoftBreakPlugin } from '../../../../../../break/src/soft-break/createSoftBreakPlugin';
 import { createAlignPlugin } from '../../../../../../elements/alignment/src/createAlignPlugin';
 import { ELEMENT_ALIGN_CENTER } from '../../../../../../elements/alignment/src/defaults';
-import { createBlockquotePlugin } from '../../../../../../elements/block-quote/src/createBlockquotePlugin';
+import { createCodeBlockPlugi } from '../../../../../../elements/block-quote/src/createCodeBlockPlugin';
 import { createCodeBlockPlugin } from '../../../../../../elements/code-block/src/createCodeBlockPlugin';
 import { ELEMENT_CODE_LINE } from '../../../../../../elements/code-block/src/defaults';
 import { createHeadingPlugin } from '../../../../../../elements/heading/src/createHeadingPlugin';
@@ -142,7 +142,6 @@ const output = (
 
 it('should be', () => {
   const plugins = renderHook(() => [
-    createBlockquotePlugin(),
     createTodoListPlugin(),
     createHeadingPlugin({ levels: 1 }),
     createImagePlugin(),
@@ -150,6 +149,7 @@ it('should be', () => {
     createListPlugin(),
     useMentionPlugin().plugin,
     createParagraphPlugin(),
+    createCodeBlockPlugi(),
     createCodeBlockPlugin(),
     createTablePlugin(),
     createMediaEmbedPlugin(),

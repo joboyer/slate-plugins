@@ -1,8 +1,7 @@
 import 'prismjs/themes/prism.css';
 import React from 'react';
 import {
-  createBlockquotePlugin,
-  createCodeBlockPlugin,
+  createCodeBlockPlugi,
   createExitBreakPlugin,
   createHeadingPlugin,
   createHistoryPlugin,
@@ -36,8 +35,7 @@ const plugins = [
   createReactPlugin(),
   createHistoryPlugin(),
   createParagraphPlugin(),
-  createBlockquotePlugin(),
-  createCodeBlockPlugin(),
+  createCodeBlockPlugi(),
   createHeadingPlugin(),
   createResetNodePlugin(optionsResetBlockTypePlugin),
   createSoftBreakPlugin(optionsSoftBreakPlugin),

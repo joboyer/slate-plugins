@@ -14,8 +14,8 @@ import {
   MARK_SUPERSCRIPT,
   MARK_UNDERLINE,
 } from '@udecode/slate-plugins-basic-marks';
-import { ELEMENT_BLOCKQUOTE } from '@udecode/slate-plugins-block-quote';
-import { BlockquoteElement } from '@udecode/slate-plugins-block-quote-ui';
+import { ELEMENT_BLOCKQUOTE, ELEMENT_BLOCKQUOTE_LINE } from '@udecode/slate-plugins-block-quote';
+import { BlockquoteElement, QuoteLineElement } from '@udecode/slate-plugins-block-quote-ui';
 import {
   ELEMENT_CODE_BLOCK,
   ELEMENT_CODE_LINE,
@@ -98,6 +98,7 @@ export const createSlatePluginsComponents = <T extends string = string>(
       },
     }),
     [ELEMENT_BLOCKQUOTE]: BlockquoteElement,
+    [ELEMENT_BLOCKQUOTE_LINE]: QuoteLineElement,
     [ELEMENT_CODE_BLOCK]: CodeBlockElement,
     [ELEMENT_CODE_LINE]: CodeLineElement,
     [ELEMENT_H1]: getComponent(StyledElement, {
